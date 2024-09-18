@@ -1,7 +1,7 @@
 # Bank-Loan-Report
 Here is a step-by-step **README** for your **Bank Loan Report Dashboard** project using **SQL** and **Power BI**:
 
----
+
 
 ## **Bank Loan Report Dashboard**
 
@@ -13,7 +13,6 @@ This project is a comprehensive dashboard built in **Power BI** using data impor
 2. **Power BI**: Download and install Power BI Desktop.
 3. **Basic understanding of SQL** for data extraction and DAX for calculations in Power BI.
 
----
 
 ### **Step 1: Data Source - SQL Server**
 1. **Connect to SQL Server**:
@@ -28,21 +27,21 @@ This project is a comprehensive dashboard built in **Power BI** using data impor
    SQL
    SELECT COUNT(id) AS Total_Loan_Applications 
    FROM bank_loan_data
-   ```
+   
 
 - Month-to-Date (MTD) Applications**:
    SQL
    SELECT COUNT(id) AS MTD_Applications 
    FROM bank_loan_data 
    WHERE MONTH(issue_date) = 12 AND YEAR(issue_date) = 2021
-   `
+   
 
 - Previous Month-to-Date (PMTD) Applications:
    SQL
    SELECT COUNT(id) AS PMTD_Applications 
    FROM bank_loan_data 
    WHERE MONTH(issue_date) = 11 AND YEAR(issue_date) = 2021
-   ```
+  
 
 - Total Funded Amount:
    SQL
